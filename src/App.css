@@ -1,0 +1,509 @@
+/* App Styles */
+.App {
+  min-height: 100vh;
+}
+
+/* Navigation */
+.main-nav {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand h2 {
+  margin: 0;
+  color: #ff6b6b;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0;
+}
+
+/* App Container */
+.app-container {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.main-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sign In Styles */
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+  padding: 1rem;
+}
+
+.signin-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.signin-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.signin-header h1 {
+  color: #333;
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.signin-header p {
+  color: #666;
+  margin: 0;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 500;
+  color: #333;
+}
+
+.email-input {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.email-input:focus {
+  outline: none;
+  border-color: #ff6b6b;
+}
+
+.signin-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 1rem;
+}
+
+.signin-btn:hover:not(:disabled) {
+  background: #ff5252;
+}
+
+.signin-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.signin-footer {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.signin-footer p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.error-message {
+  background: #fee;
+  color: #c33;
+  padding: 0.75rem;
+  border-radius: 4px;
+  border: 1px solid #fcc;
+  text-align: center;
+}
+
+/* Dashboard Styles */
+.dashboard-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.dashboard-header {
+  background: linear-gradient(135deg, #ff6b6b, #4ecdc4);
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.logout-btn {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.logout-btn:hover {
+  background: rgba(255,255,255,0.3);
+}
+
+.dashboard-content {
+  padding: 2rem;
+}
+
+.balance-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.balance-card, .points-card {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 2px solid #e9ecef;
+}
+
+.balance-card h2, .points-card h2 {
+  margin: 0 0 0.5rem 0;
+  color: #666;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.balance-amount, .points-amount {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.actions-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.add-funds-form {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+}
+
+.add-funds-form h3 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.add-funds-form .form-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: end;
+}
+
+.amount-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.add-funds-btn {
+  background: #4ecdc4;
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.add-funds-btn:hover:not(:disabled) {
+  background: #45b7aa;
+}
+
+.add-funds-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.invest-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  text-align: center;
+}
+
+.invest-btn {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 150px;
+}
+
+.invest-btn.enabled {
+  background: #ff6b6b;
+  color: white;
+}
+
+.invest-btn.enabled:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+}
+
+.invest-btn.disabled {
+  background: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.invest-requirement {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Rewards Styles */
+.rewards-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 2rem;
+}
+
+.rewards-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.rewards-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.user-points {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f8f9fa;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  border: 2px solid #e9ecef;
+}
+
+.points-label {
+  color: #666;
+  font-weight: 500;
+}
+
+.points-value {
+  font-weight: bold;
+  color: #ff6b6b;
+  font-size: 1.1rem;
+}
+
+.rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.reward-card {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.reward-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.reward-info {
+  margin-bottom: 1rem;
+}
+
+.reward-name {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.reward-description {
+  margin: 0 0 1rem 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.reward-cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cost-label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.cost-value {
+  font-weight: bold;
+  color: #ff6b6b;
+}
+
+.redeem-btn {
+  padding: 0.75rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.redeem-btn.available {
+  background: #4ecdc4;
+  color: white;
+}
+
+.redeem-btn.available:hover {
+  background: #45b7aa;
+}
+
+.redeem-btn.unavailable {
+  background: #ccc;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.no-points-message {
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+}
+
+.no-points-message p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-nav {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-content {
+    padding: 1rem;
+  }
+
+  .dashboard-header {
+    padding: 1.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dashboard-content {
+    padding: 1rem;
+  }
+
+  .balance-section {
+    grid-template-columns: 1fr;
+  }
+
+  .actions-section {
+    grid-template-columns: 1fr;
+  }
+
+  .add-funds-form .form-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rewards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rewards-header {
+    flex-direction: column;
+    text-align: center;
+  }
+}
